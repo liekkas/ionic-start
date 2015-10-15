@@ -1,0 +1,38 @@
+<ion-header-bar class="bar-calm">
+    <h1 class="title">Page2!</h1>
+    <button class="button button-energized icon ion-ios-trash-outline" ng-click="p2.clear()">清理缓存</button>
+</ion-header-bar>
+<ion-content class="padding">
+    <p>I'm Page2 <a href="#/main">GO main</a> </p>
+
+    <div class="list card padding" collection-repeat="item in p2.users"
+         item-width="48%"
+         item-height="380px">
+
+        <div class="item item-avatar">
+            <img src="{{item.user.picture.thumbnail}}"/>
+            <h2>{{item.user.name.first}} {{item.user.name.last}}</h2>
+            <p>{{item.user.locationg.city}} {{item.user.password}}</p>
+        </div>
+
+        <div class="item item-image">
+            <img src="{{item.user.picture.large}}"/>
+        </div>
+
+        <a class="item item-icon-left assertive" href="#">
+            <i class="icon ion-music-note"></i>
+            Start listening
+        </a>
+
+    </div>
+
+    <!--<ion-list class="list card">-->
+        <!--<ion-item class="item-avatar" collection-repeat="item in p2.users">-->
+            <!--<img src="{{item.user.picture.thumbnail}}"/>-->
+            <!--<h2>{{item.user.name.first}} {{item.user.name.last}}</h2>-->
+            <!--<p>{{item.user.locationg.city}} {{item.user.password}}</p>-->
+        <!--</ion-item>-->
+    <!--</ion-list>-->
+
+    <ion-infinite-scroll on-infinite="p2.loadMore()" distance="5%"></ion-infinite-scroll>
+</ion-content>
