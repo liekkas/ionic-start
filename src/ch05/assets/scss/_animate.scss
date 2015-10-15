@@ -1,0 +1,86 @@
+$duration-normal:750ms;
+$duration-scale:400ms;
+$duration-bounce:1000ms;
+
+//从左往右滑出
+@-webkit-keyframes showLeftRight {
+  0% {
+    -webkit-transform: translate3d(-100%,0,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+}
+
+//逐渐呈现
+@-webkit-keyframes showFade{
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//反弹效果
+@-webkit-keyframes showBounce {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  25% {
+    -webkit-transform: translate3d(0,-30%,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0,-30%,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+//尺寸放大效果
+@-webkit-keyframes showScale {
+  0% {
+    -webkit-transform: scale3d(1, 0, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 0);
+  }
+}
+
+
+.show-left-right {
+  animation: showLeftRight;
+  animation-duration: $duration-normal;
+}
+
+.show-fade {
+  animation: showFade ease-in 1;
+  animation-duration: $duration-normal;;
+}
+
+.show-bounce {
+  animation: shoBounce ease-in 1;
+  animation-duration: $duration-bounce;
+}
+
+.show-scale {
+  animation: showScale ease-in 1;
+  animation-duration: $duration-scale;
+}

@@ -1,0 +1,84 @@
+<ion-view view-title="设置">
+    <ion-nav-bar class="bar-calm">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+
+        <div class="list" style="color:black;">
+            <div class="item item-divider">
+
+            </div>
+            <a class="item item-icon-left">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                联系客服
+                <span class="item-note">
+                  4000-8888-1000
+                </span>
+            </a>
+
+            <a class="item item-icon-left item-icon-right" ui-sref="profile-account">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                账号信息
+                <span class="item-note">
+                  demo
+                </span>
+                <i class="icon ion-chevron-right" style="font-size: 14px;"></i>
+
+            </a>
+
+            <a class="item item-icon-left item-icon-right" ui-sref="advise">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                意见反馈
+                <i class="icon ion-chevron-right" style="font-size: 14px;"></i>
+            </a>
+
+            <div class="item item-divider">
+
+            </div>
+
+
+
+            <a class="item item-icon-left item-icon-right" ui-sref="about">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                关于我们
+                <span class="item-note">
+                  北京图加科技
+                </span>
+                <i class="icon ion-chevron-right" style="font-size: 14px;"></i>
+            </a>
+
+            <ion-toggle class="item-icon-left">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                消息推送
+            </ion-toggle>
+
+            <a class="item item-icon-left">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                清除缓存
+                <span class="item-note">
+                  189.45 KB
+                </span>
+            </a>
+
+            <a class="item item-icon-left">
+                <i class="icon ion-ios-gear-outline" style="font-size: 16px;"></i>
+                检查版本
+                <span class="item-note">
+                  v 1.0.0
+                </span>
+            </a>
+
+        </div>
+
+        <div style="height: 10px;">
+
+        </div>
+
+        <div class="padding-horizontal">
+            <button ng-click="set.onLogout()"
+                    class="button button-block button-assertive ink">退出登录</button>
+        </div>
+
+    </ion-content>
+</ion-view>

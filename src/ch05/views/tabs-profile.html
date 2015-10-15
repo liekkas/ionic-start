@@ -1,0 +1,81 @@
+<ion-view view-title="个人中心">
+    <ion-nav-bar class="bar-calm">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content>
+        <div class="profile-header">
+            <div ng-if="profile.user != null">
+                <a ui-sref="profile-account">
+                    <img class="has-user-image" src="{{profile.user.profile_img}}"/>
+                </a>
+                <h4>demo</h4>
+            </div>
+            <div ng-if="profile.user == null" class="no-user-image"
+                 ui-sref="login">
+                登录 / 注册
+            </div>
+        </div>
+
+        <div class="row show-scale" style="color: black;">
+            <div class="col">
+                <div class="list">
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-card"></i>
+                        待付款
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-ios-telephone"></i>
+                        待收货
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-wifi"></i>
+                        待发货
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-card"></i>
+                        退款/售后
+                    </a>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="list">
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-home"></i>
+                        我的订单
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-ios-telephone"></i>
+                        我的收藏
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'account-edit-nickname'}}" class="item item-icon-left">
+                        <i class="icon ion-wifi"></i>
+                        收货地址
+                    </a>
+
+                    <a ui-sref="{{profile.user == null ? 'login' : 'profile-setting'}}" class="item item-icon-left">
+                        <i class="icon ion-card"></i>
+                        设置
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+
+
+</ion-view>
+
+
+
+
