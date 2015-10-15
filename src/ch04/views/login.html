@@ -1,0 +1,33 @@
+<ion-view view-title="Login">
+    <ion-content class="login-bg">
+        <div class="app-header">
+            <div class="icon"></div>
+            <h1 class="title">图加</h1>
+        </div>
+
+        <div class="login-content show-left-right">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                <span class="input-label">
+                    <i class="icon ion-person placeholder-icon"></i>
+                    用户名
+                </span>
+                    <input class="input" type="text" placeholder="用户名："
+                            ng-model="login.user">
+                </label>
+                <label class="item item-input item-floating-label">
+                <span class="input-label text">
+                    <i class="icon ion-ios-locked placeholder-icon"></i>
+                    密码
+                </span>
+                    <input class="input" type="password" placeholder="密码："
+                            ng-model="login.pwd">
+                </label>
+            </div>
+            <label class="input-error" ng-show="login.isLoginError">* 用户名和密码不匹配。</label>
+
+            <button ng-click="login.onLogin()" class="button button-full button-assertive ink">登录</button>
+
+        </div>
+    </ion-content>
+</ion-view>
