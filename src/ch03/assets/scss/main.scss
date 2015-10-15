@@ -1,0 +1,6 @@
+@import 'vars';
+@import 'typography';
+//// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../vendors/ionic/fonts" !default;
+
+@import "../vendors/ionic/scss/ionic";
