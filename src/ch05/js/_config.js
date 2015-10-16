@@ -5,7 +5,7 @@
     'use strict';
 
     app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
-        $ionicConfigProvider.scrolling.jsScrolling(false);
+        //$ionicConfigProvider.scrolling.jsScrolling(false);
 
         $stateProvider
             .state('login',{
@@ -14,14 +14,15 @@
                 controller: 'LoginCtrl as login'
             })
             .state('tab',{
-                url: '',
                 abstract: true,
-                templateUrl: 'tabs.html'
+                url: '',
+                templateUrl: 'tabs.html',
+                controller: 'TabCtrl as tab'
             })
             .state('tab.home',{
                 url: '/home',
                 views: {
-                    'home': {
+                    'conent': {
                         templateUrl: 'tabs-home.html',
                         controller: 'HomeCtrl as home'
                     }
@@ -31,7 +32,7 @@
             .state('tab.cart',{
                 url: '/cart',
                 views: {
-                    'cart': {
+                    'conent': {
                         templateUrl: 'tabs-cart.html',
                         controller: 'CartCtrl as cart'
                     }
@@ -41,7 +42,7 @@
             .state('tab.model',{
                 url: '/model',
                 views: {
-                    'model': {
+                    'conent': {
                         templateUrl: 'tabs-model.html',
                         controller: 'ModelCtrl as model'
                     }
@@ -51,11 +52,23 @@
             .state('tab.profile',{
                 url: '/profile',
                 views: {
-                    'profile': {
+                    'conent': {
                         templateUrl: 'tabs-profile.html',
                         controller: 'ProfileCtrl as profile'
                     }
                 }
+            })
+            .state('message',{
+                url: '/message',
+                templateUrl: 'profile/message.html'
+            })
+            .state('logistics',{
+                url: '/message/logistics',
+                templateUrl: 'profile/logistics.html'
+            })
+            .state('sales-promotion',{
+                url: '/message/sales-promotion',
+                templateUrl: 'profile/sales-promotion.html'
             })
             .state('profile-account',{
                 url: '/profile/account',

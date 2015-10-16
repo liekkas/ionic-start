@@ -20,13 +20,15 @@
                 vm.isLoginError = false;
                 var user = {
                     name: 'demo',
+                    nickname: '斜风细雨',
                     pwd: 'demo',
-                    profile_img: 'assets/images/profile.jpeg',
+                    profile_img: 'assets/images/profile.jpg',
                     phone: '18610241086'
                 };
                 UserService.saveUser(user);
                 $rootScope.$emit(Events.USER_LOGINED,user);
-                $state.go($rootScope[Constants.PREVENT_STATE]);
+                //$state.go($rootScope[Constants.PREVENT_STATE]);
+                $state.go('tab.profile');
             }else{
                 vm.isLoginError = true;
                 console.log(">>> no: user: "+vm.user);

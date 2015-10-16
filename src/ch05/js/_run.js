@@ -11,7 +11,7 @@
     /**
      * @ngInject
      */
-    function onReady($ionicPlatform) {
+    function onReady($ionicPlatform,$rootScope,Constants) {
 
       $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -25,6 +25,9 @@
           StatusBar.styleLightContent();
         }
       });
+
+        //默认是首页
+        $rootScope[Constants.CURRENT_STATE] = 'tab.home';
     }
 
     /**

@@ -1,0 +1,18 @@
+.noti_bubble {
+  position:absolute;
+  width:18px;
+  height:18px;
+  top: -6px;
+  right:-10px;
+  background-color:red;
+  color:white;
+  font-weight:bold;
+  font-size:0.55em;
+  border-radius:30px;
+  text-align: center;
+}
+
+.item-right-check {
+  font-size: 12px;
+  opacity: 0.5;
+}

@@ -6,13 +6,16 @@
 //引入ionic内置的变量
 @import "../vendors/ionic/scss/variables";
 
+@import "app/common";
+@import "app/tabs";
+@import "app/cart";
 @import "app/login";
 @import "app/profile";
 
 @import "directives/md-label";
 
 body{
-  color:white;
+  //color:white;
 }
 
 .no-border {

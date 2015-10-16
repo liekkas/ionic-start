@@ -1,9 +1,13 @@
+.profile-bg {
+  background-image: url("../images/app_bg.jpg");
+}
 
 .profile-header {
   width: 100%;
-  height: 28%;
+  height: 35%;
   text-align: center;
-  background-color: $calm;
+  //background-color: $calm;
+
   padding-top: 8%;
   padding-bottom: 8%;
 
@@ -26,4 +30,50 @@
     padding-top: 40px;
     margin: auto;
   }
+}
+
+.profile-payinfo-container {
+    //padding: 0;
+    //margin: 0;
+    height: 55px;
+    background-color: rgba(white, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+.payinfo-item {
+  opacity: 1;
+  color: rgba(black,0.7);
+  text-align: center;
+  width:25%;
+  height: 100%;
+  font-size: 12px;
+  border-right:1px solid rgba(white, 0.5);
+  .icon {
+    display: block;
+    margin: 0 auto;
+    color: rgba(black,0.6);
+    height: $tabs-icon-size;
+    font-size: $tabs-icon-size;
+  }
+}
+
+.setting-container {
+  //padding: 0;
+  //margin: 0;
+  height: 55px;
+  background-color: rgba(white, 0.5);
+  display: flex;
+  flex-direction: row;
+}
+
+.setting-item {
+  width: 50%;
+}
+
+.vertical-line {
+  border-left: 1px solid #B7D0E4;
+  display: inline-block;
+  margin-left: -1px;
+  padding: 0px 0px 0px 3px;
 }

@@ -1,19 +1,30 @@
-<ion-tabs class="tabs-icon-top tabs-positive fade-in-not-out">
+<ion-view>
+  <ion-nav-view name="conent"></ion-nav-view>
 
-  <ion-tab title="图加" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/home">
-    <ion-nav-view name="home"></ion-nav-view>
-  </ion-tab>
+  <ion-footer-bar class="bar-light no-margin no-padding tab-container">
+    <div ng-class="tab.selectState === 'tab.home' ? 'cus-tab-item-active' : 'cus-tab-item-unactive'"
+         ng-click="tab.changeState('tab.home')">
+      <a ng-class="tab.selectState === 'tab.home' ? 'button button-icon icon ion-ios-home' :'button button-icon icon ion-ios-home-outline'"></a>
+      <div>图加</div>
+    </div>
 
-  <ion-tab title="购物车" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" href="#/cart">
-    <ion-nav-view name="cart"></ion-nav-view>
-  </ion-tab>
+    <div ng-class="tab.selectState === 'tab.cart' ? 'cus-tab-item-active' : 'cus-tab-item-unactive'"
+         ng-click="tab.changeState('tab.cart')">
+      <a ng-class="tab.selectState === 'tab.cart' ? 'button button-icon icon ion-ios-cart' :'button button-icon icon ion-ios-cart-outline'"></a>
+      <div>购物车</div>
+    </div>
 
-  <ion-tab title="三维模型" icon-off="ion-ios-color-filter-outline" icon-on="ion-ios-color-filter" href="#/model">
-    <ion-nav-view name="model"></ion-nav-view>
-  </ion-tab>
+    <div ng-class="tab.selectState === 'tab.model' ? 'cus-tab-item-active' : 'cus-tab-item-unactive'"
+         ng-click="tab.changeState('tab.model')">
+      <a ng-class="tab.selectState === 'tab.model' ? 'button button-icon icon ion-ios-color-filter' :'button button-icon icon ion-ios-color-filter-outline'"></a>
+      <div>三维模型</div>
+    </div>
 
-  <ion-tab title="我" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/profile">
-    <ion-nav-view name="profile"></ion-nav-view>
-  </ion-tab>
+    <div ng-class="tab.selectState === 'tab.profile' ? 'cus-tab-item-active' : 'cus-tab-item-unactive'"
+         ng-click="tab.changeState('tab.profile')">
+      <a ng-class="tab.selectState === 'tab.profile' ? 'button button-icon icon ion-ios-person' :'button button-icon icon ion-ios-person-outline'"></a>
+      <div>我</div>
+    </div>
 
-</ion-tabs>
+  </ion-footer-bar>
+</ion-view>
