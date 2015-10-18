@@ -6,30 +6,17 @@
 //引入ionic内置的变量
 @import "../vendors/ionic/scss/variables";
 
+@import "override";
 @import "app/common";
 @import "app/tabs";
 @import "app/cart";
+@import "app/glasses";
 @import "app/login";
 @import "app/profile";
 
 @import "directives/md-label";
+@import "directives/z-ion-item";
 
 body{
   //color:white;
-}
-
-.no-border {
-  border: none;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.icon-size-large {
-  font-size: 28px;
 }

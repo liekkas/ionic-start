@@ -5,7 +5,7 @@
     'use strict';
 
     app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
-        //$ionicConfigProvider.scrolling.jsScrolling(false);
+        $ionicConfigProvider.scrolling.jsScrolling(false);
 
         $stateProvider
             .state('login',{
@@ -61,6 +61,18 @@
             .state('message',{
                 url: '/message',
                 templateUrl: 'profile/message.html'
+            })
+            .state('coupon',{
+                url: '/profile/coupon',
+                templateUrl: 'profile/coupon.html'
+            })
+            .state('collection',{
+                url: '/profile/collection',
+                templateUrl: 'profile/collection.html'
+            })
+            .state('orders',{
+                url: '/profile/orders',
+                templateUrl: 'profile/orders.html'
             })
             .state('logistics',{
                 url: '/message/logistics',

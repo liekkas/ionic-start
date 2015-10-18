@@ -14,7 +14,11 @@
             $rootScope.$emit(Events.USER_LOGOUTED);
             $state.go('login');
             console.log('>>> SettingCtrl:用户退出');
-        }
+        };
+
+        vm.onClearCache = function () {
+
+        };
     }
 
     app.controller('SettingCtrl', SettingCtrl);

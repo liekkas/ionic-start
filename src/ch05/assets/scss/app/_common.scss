@@ -1,3 +1,24 @@
+
+.no-border {
+  border: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-scroll {
+  display: none;
+}
+
+.icon-size-large {
+  font-size: 28px;
+}
+
 .noti_bubble {
   position:absolute;
   width:18px;
@@ -12,7 +33,6 @@
   text-align: center;
 }
 
-.item-right-check {
-  font-size: 12px;
+.half-opacity {
   opacity: 0.5;
 }

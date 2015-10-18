@@ -1,51 +1,16 @@
 <ion-view view-title="消息">
     <ion-nav-bar class="bar-calm">
-        <ion-nav-back-button>
-        </ion-nav-back-button>
+        <ion-nav-back-button></ion-nav-back-button>
     </ion-nav-bar>
 
     <ion-content>
         <ion-list >
-            <ion-item class="show-scale" ui-sref="logistics">
-                <div class="row">
-                    <div style="float:left;padding-right: 10px;">
-                        <ionic-letter-avatar data="物流" shape="round"></ionic-letter-avatar>
-                    </div>
-                    <div class="col col-60">
-                        <h2>你有个订单已发货</h2>
-                        <p>暴龙眼镜树脂精品款正在运送中</p>
-                    </div>
-                    <p>昨天 12:05</p>
-                </div>
-            </ion-item>
-
-            <ion-item class="show-scale" ui-sref="sales-promotion">
-                <div class="row">
-                    <div style="float:left;padding-right: 10px;">
-                        <ionic-letter-avatar data="降价" shape="round"></ionic-letter-avatar>
-                    </div>
-                    <div class="col col-60">
-                        <h2>喜欢的宝贝降价啦，戳这里~</h2>
-                        <p>各种眼镜打半折</p>
-                    </div>
-                    <p>2015-10-15</p>
-                </div>
-            </ion-item>
-
-            <ion-item class="show-scale" ui-sref="sales-promotion">
-                <div class="row">
-                    <div style="float:left;padding-right: 10px;">
-                        <ionic-letter-avatar data="促销" shape="round"></ionic-letter-avatar>
-                    </div>
-                    <div class="col col-60">
-                        <h2>双11促销活动</h2>
-                        <p>各种眼镜打半折，即将到来，敬请期待！</p>
-                    </div>
-                    <p>2015-10-16</p>
-                </div>
-            </ion-item>
-
-
+            <z-item-message state="logistics" letter="物流" right-text="昨天 12:05" shape="round"
+                            title="你有个订单已发货" desc="暴龙眼镜树脂精品款正在运送中"></z-item-message>
+            <z-item-message state="sales-promotion" letter="促销" right-text="2015-10-15" shape="round"
+                            title="喜欢的宝贝降价啦，戳这里~" desc="图加眼镜大降价"></z-item-message>
+            <z-item-message state="sales-promotion" letter="促销" right-text="2015-10-14" shape="round"
+                            title="双11促销活动" desc="各种眼镜打半折，即将到来，敬请期待！"></z-item-message>
         </ion-list>
     </ion-content>
 </ion-view>

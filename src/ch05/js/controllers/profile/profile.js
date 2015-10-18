@@ -5,7 +5,7 @@
     'use strict';
 
     /* @ngInject */
-    function ProfileCtrl($rootScope,Constants,Events,UserService) {
+    function ProfileCtrl($state,$rootScope,Constants,Events,UserService) {
         //视图模型ViewModel
         var vm = this;
         vm.user = UserService.getCurrentUser();
@@ -23,7 +23,10 @@
         });
 
         vm.jump = function (state) {
-            return vm.user === null ? 'login' : state;
+            var result = vm.user === null ? 'login' : state;
+            console.log('>>>明明有了a：'+vm.user+' state:'+result);
+
+            $state.go(result);
         };
 
         console.log(vm.user);
