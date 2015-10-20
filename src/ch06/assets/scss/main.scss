@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@import 'vars';
+@import 'typography';
+@import "animate";
+
+//引入ionic内置的变量
+@import "../vendors/ionic/scss/variables";
+
+@import "override";
+@import "app/common";
+@import "app/tabs";
+@import "app/cart";
+@import "app/glasses";
+@import "app/login";
+@import "app/profile";
+@import "app/model";
+
+@import "directives/md-label";
+@import "directives/z-ion-item";
+
+body{
+  //color:white;
+}

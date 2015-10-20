@@ -1,0 +1,38 @@
+
+.no-border {
+  border: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-scroll {
+  display: none;
+}
+
+.icon-size-large {
+  font-size: 28px;
+}
+
+.noti_bubble {
+  position:absolute;
+  width:18px;
+  height:18px;
+  top: -6px;
+  right:-10px;
+  background-color:red;
+  color:white;
+  font-weight:bold;
+  font-size:0.55em;
+  border-radius:30px;
+  text-align: center;
+}
+
+.half-opacity {
+  opacity: 0.5;
+}

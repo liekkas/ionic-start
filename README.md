@@ -10,4 +10,5 @@
 >* ch02  localStorage http://mcgivery.com/hello-backend-your-second-ionic-framework-app/
 >* ch03  lokijs集成 http://lokijs.org/
 >* ch04  原型开发v1
->* ch05  原型开发v2 去掉tabs
+>* ch05  原型开发v2
+>* ch06  threejs集成

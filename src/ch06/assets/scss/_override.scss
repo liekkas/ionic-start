@@ -1,0 +1,10 @@
+//ionic重写
+
+.item-divider {
+  padding-top: ceil($item-padding / 2);
+  padding-bottom: ceil($item-padding / 2);
+  min-height: 15px;
+  background-color: $item-divider-bg;
+  color: $item-divider-color;
+  font-weight: 500;
+}

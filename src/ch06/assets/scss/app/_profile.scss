@@ -1,0 +1,104 @@
+.profile-bg {
+  background-image: url("../images/app_bg.jpg");
+}
+
+.profile-header {
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  //background-color: $calm;
+
+  padding-top: 8%;
+  padding-bottom: 8%;
+  .user-name {
+    color:rgba(white,0.75);
+  }
+  .has-user-image {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    border: solid 2px rgba(white,0.4);
+    width: 100px;
+    height: 100px;
+  }
+
+  .no-user-image{
+    cursor: pointer;
+    color:rgba(white,0.75);
+    background-color: rgba($calm,0.6);
+    border: solid 2px rgba(white,0.4);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    margin: auto;
+  }
+}
+
+.profile-payinfo-container {
+    //padding: 0;
+    height: 58px;
+    background-color: rgba(white, 0.4);
+    display: flex;
+    flex-direction: row;
+}
+
+.payinfo-item {
+  opacity: 1;
+  color: rgba(black,0.7);
+  text-align: center;
+  margin: auto;
+  width:25%;
+  height: 100%;
+  font-size: 12px;
+  a {
+    color: rgba(black,0.7);
+    text-decoration: none;
+  }
+  .icon {
+    display: block;
+    margin: 0 auto;
+    color: rgba(black,0.5);
+    height: $tabs-icon-size;
+    font-size: $tabs-icon-size;
+  }
+}
+
+.has-border-right{
+  border-right:1px solid rgba(gray, 0.2);
+}
+
+.setting-container {
+  //padding: 0;
+  //margin: 0;
+  height: 55px;
+  background-color: rgba(white, 0.5);
+  display: flex;
+  flex-direction: row;
+}
+
+.setting-item {
+  width: 50%;
+}
+
+.vertical-line {
+  border-left: 1px solid #B7D0E4;
+  display: inline-block;
+  margin-left: -1px;
+  padding: 0px 0px 0px 3px;
+}
+
+.coupon-item {
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  color: $assertive;
+  background-image: url("../images/coupon.png");
+  .desc {
+    font-size: 12px;
+    color: gray;
+  }
+}

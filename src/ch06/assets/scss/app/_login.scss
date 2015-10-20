@@ -1,0 +1,50 @@
+
+.login-bg {
+  background: url("../images/login.jpg") center;
+  background-size: cover;
+  padding-top: 10%;
+}
+
+.app-header {
+  background-size: cover;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  color: #fff;
+  height: 200px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  .icon {
+    background-color: #fff;
+    background: url('../images/icon.png') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+  }
+
+  .title {
+    color:white;
+    font-family: 黑体;
+  }
+}
+
+.login-content{
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  .input-label{
+    color:white;
+    font-family: 黑体;
+  }
+  .input{
+    color:white;
+  }
+  .input-error{
+    color:red;;
+  }
+}
+
+
+
