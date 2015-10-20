@@ -9,6 +9,6 @@ gulp.task('public', ['clean'], function(cb) {
 
   global.isProd = true;
 
-  runSequence(['vendors','styles', 'images', 'views', 'scripts'], 'gzip', cb);
+  runSequence(['vendors','styles', 'images','models', 'views', 'scripts'], 'gzip', cb);
 
 });
