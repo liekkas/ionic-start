@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="autotake_camera"
+        version="1.0.0">
+
+  <name>AutoTakeCamera</name>
+
+  <description>
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/AutoTakeCamera.js" name="AutoTakeCamera">
+    <clobbers target="window.plugins.autotakecamera" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <hook type="after_plugin_install" src="hooks/add_swift_support.js" />
+    <config-file target="config.xml" parent="/*">
+      <feature name="AutoTakeCamera">
+        <param name="ios-package" value="AutoTakeCamera"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/ios/AutoTakeCamera.swift"/>
+    <source-file src="src/ios/Device.swift"/>
+    <source-file src="src/ios/AutoTakeSendResultProcess.swift"/>
+    <source-file src="src/ios/TakeViewController.swift"/>
+    <source-file src="src/ios/ExifContainer.h"/>
+    <source-file src="src/ios/Autotake-Camera-Bridging-Header.h"/>
+    <source-file src="src/ios/ExifContainer.m"/>
+    <source-file src="src/ios/UIImage+Exif.h"/>
+    <source-file src="src/ios/UIImage+Exif.m"/>
+    <framework src="CoreGraphics.framework" />
+    <framework src="MobileCoreServices.framework" />
+  </platform>
+</plugin>
